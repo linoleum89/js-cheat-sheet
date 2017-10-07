@@ -199,6 +199,13 @@ alert(calvin.greetFriends.apply(bill, [calvin, hobbes]));
 
 In this example, we supply two arguments to the apply function: bill as the context for this and an array with our two person objects. calvin and hobbes become the parameters friendA and friendB in greetFriends.
 
+### CSS
+
+#### Specificity
+
+Is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
+
+Specificity is a weight that is applied to a given CSS declaration, determined by the number of each selector type in the matching selector. When multiple declarations have equal specificity, the last declaration found in the CSS is applied to the element. Specificity only applies when the same element is targeted by multiple declarations. As per CSS rules, directly targeted elements will always take precedence over rules which an element inherits from its ancestor.
 
 ### Thanks to:
 
