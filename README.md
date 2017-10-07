@@ -199,6 +199,45 @@ alert(calvin.greetFriends.apply(bill, [calvin, hobbes]));
 
 In this example, we supply two arguments to the apply function: bill as the context for this and an array with our two person objects. calvin and hobbes become the parameters friendA and friendB in greetFriends.
 
+
+### Functional JavaScript
+
+Functional programming (often abbreviated FP) is the process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects. Functional programming is declarative rather than imperative, and application state flows through pure functions. Contrast with object oriented programming, where application state is usually shared and colocated with methods in objects.
+
+#### Function composition
+
+Is the process of combining two or more functions in order to produce a new function or perform some computation.
+
+#### Shared State
+
+Is any variable, object, or memory space that exists in a shared scope, or as the property of an object being passed between scopes. A shared scope can include global scope or closure scopes. Often, in object oriented programming, objects are shared between scopes by adding properties to other objects.
+
+#### Immutability
+
+An immutable object is an object that can’t be modified after it’s created. Conversely, a mutable object is any object which can be modified after it’s created.
+Immutability is a central concept of functional programming because without it, the data flow in your program is lossy. State history is abandoned, and strange bugs can creep into your software. 
+
+#### Side effects
+
+A side effect is any application state change that is observable outside the called function other than its return value. Side effects include:
+
+* Modifying any external variable or object property (e.g., a global variable, or a variable in the parent function scope chain)
+* Logging to the console
+* Writing to the screen
+* Writing to a file
+* Writing to the network
+* Triggering any external process
+* Calling any other functions with side-effects
+
+#### Higher order function
+
+Is any function which takes a function as an argument, returns a function, or both. Higher order functions are often used to:
+
+* Abstract or isolate actions, effects, or async flow control using callback functions, promises, monads, etc…
+* Create utilities which can act on a wide variety of data types
+* Partially apply a function to its arguments or create a curried function for the purpose of reuse or function composition
+* Take a list of functions and return some composition of those input functions
+
 ### CSS
 
 #### Specificity
@@ -211,4 +250,5 @@ Specificity is a weight that is applied to a given CSS declaration, determined b
 
  * [Markdown-editor](https://jbt.github.io/markdown-editor) for Markdown parsing
  * [Taylor Mcgann](http://blog.taylormcgann.com) for strong concepts on JS
- * [Medium](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa) For SOLID concepts
+ * [SOLID article](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa) For SOLID concepts
+ * [Master the JavaScript Interview: What is Functional Programming?] (https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0) For Functional Programming
